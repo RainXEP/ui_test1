@@ -33,6 +33,13 @@ class BasePage(object):
         element = WebDriverWait(self.browser, 10).until(EC.visibility_of_element_located(by_locator))
         return bool(element)
 
+    def get_element_text(self, by_locator):
+        item_page_title = self.browser.find_element(by_locator)
+        return item_page_title.text
+
+
+
+
 
 
 

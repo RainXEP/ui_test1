@@ -7,4 +7,8 @@ from config.test_data import TestData
 from pages.search_page import SearchPage
 
 class ItemPage(BasePage):
-    pass
+    favourite_title = (By.CLASS_NAME, "product-card-title")
+    item_page_title = (By.CLASS_NAME, "desc-name")
+    favourite_button = (By.CSS_SELECTOR, "#product-page > div > div > div.product-wrap > div.product-desc > div > button.btn.product-buttons-favorite.filled.giant > svg > use")
+
+
